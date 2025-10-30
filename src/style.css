@@ -1,1 +1,64 @@
-body { background-color: aqua;}
+body { 
+  background: #9BB4C0;
+  color: #703B3B;
+  display: flex;
+  font-family: "Vend Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  justify-content: center;
+  margin: 50px 300px;
+  text-align: center;   
+}
+
+
+header{
+  margin: 15px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+form {
+  margin: 15px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+}
+
+.search-bar {
+width: 330px;
+padding: 15px;
+border: none;
+background-color: #A18D6D;
+border-radius: 10px;
+color:  #703B3B;
+font-size: 16px;
+}
+.search-bar::placeholder {
+  color:  #703B3B;
+}
+.submit-button {
+width: 100px;
+padding: 15px;
+border: none;
+background-color: #A18D6D;
+border-radius: 10px;
+color:  #703B3B;
+font-size: 16px;
+}
+.submit-button:hover{
+  background-color: #703B3B;
+  color:#E1D0B3;
+}
+.poem-title{
+  background-color: rgb(225, 208, 179, 0.8);
+  margin: 15px;
+  padding: 5px;
+  border-radius: 10px;
+}
+a{
+  color: #E1D0B3;
+}
+footer{
+  margin: 15px;
+  padding: 5px;
+}

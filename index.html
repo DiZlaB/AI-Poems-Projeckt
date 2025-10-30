@@ -3,23 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Tangerine:wght@400;700&family=Vend+Sans:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="src/style.css">
   <title>Poem Projeckt</title>
 </head>
 <body>
+  <div class="container">
   <header>
   <h1>Find a poem for your loved once</h1>
- </header>
+  </header>
 
  <main>
-<form action="">
-  <input type="text" placeholder="search by topic">
-  <input type="submit">
+ <form action="">
+  <input type="text" placeholder="Search for a poem..." class="search-bar">
+  <input type="submit" value="Send" class="submit-button">
 </form>
+
+<div class="poem-title">
 <h3>My mother reads poetry</h3>
 <h4>Georgi Gospodinov</h4>
 <h5>(translated from Bulgarian by Maria Vassileva)</h5>
-
+</div>
+<div class="poem-title">
 <p>2 packs thin ready-rolled pastry sheets <br>
 2 coffee cups butter melted <br>
 a kilogram of apples <br>
@@ -47,10 +54,11 @@ and the bottom pink. </p>
 
 <p>When you bake it, it’s a strudel, <br>
 but for now it’s still a poem. </p>
-
+</div>
 </main>
 <hr>
 <footer> <small>This project was created by<a href="https://github.com/DiZlaB" target="_blank"> Dilyana</a>. It is an open source on <a href="https://github.com/DiZlaB/AI-Poems-Projeckt" target="_blank">GitHub</a> and it is hosted on <a href="https://app.netlify.com/projects/poemprojeckt/overview" target="_blank">Netlify</a></small></footer>
+</div>
 <script src="src/script.js"></script> 
 </body>
 </html>
