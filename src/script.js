@@ -18,6 +18,8 @@ function showPoem(response) {
     autoStart: true,
     delay: 40,
     cursor: "",
+    loop: false,
+    deleteSpeed: Infinity
   });
 }
 let searchBar = document.querySelector("#search-form");
