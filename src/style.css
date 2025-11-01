@@ -21,8 +21,12 @@ form {
   margin: 15px;
   padding-bottom: 20px;
   border-radius: 10px;
+  display: inline-block;
+  text-align: left;
 }
-
+.hint {
+  margin-left: 10px;
+}
 .search-bar {
 width: 330px;
 padding: 15px;
@@ -37,6 +41,7 @@ font-size: 16px;
 }
 .submit-button {
 width: 100px;
+margin-left: 10px;
 padding: 15px;
 border: none;
 background-color: #A18D6D;
@@ -48,12 +53,7 @@ font-size: 16px;
   background-color: #703B3B;
   color:#E1D0B3;
 }
-.poem-title{
-  background-color: rgb(225, 208, 179, 0.8);
-  margin: 15px;
-  padding: 5px;
-  border-radius: 10px;
-}
+
 .poem-body{
   background-color: rgb(225, 208, 179, 0.8);
   margin: 15px;
@@ -70,3 +70,14 @@ footer{
 #poem-section .Typewriter__wrapper {
   white-space: pre-wrap;
 }
+
+.generated-poem, .poem-body {
+  animation: fadeIn 1.2s ease-in;
+}
+
+.generated-poem {
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  border-radius: 15px;
+  backdrop-filter: blur(3px);
+}
+
