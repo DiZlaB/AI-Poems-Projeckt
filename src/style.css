@@ -1,3 +1,4 @@
+ *{ box-sizing: border-box; }
 body { 
   background: #9BB4C0;
   color: #703B3B;
@@ -7,29 +8,56 @@ body {
   font-weight: 300;
   font-style: normal;
   justify-content: center;
-  margin: 50px 300px;
+  margin: 0 auto;
+  padding: 40px 16px;
   text-align: center;   
 }
-
+.container {
+  width: 100%;
+  max-width: 900px;
+}
 header{
   margin: 15px;
   padding: 5px;
-  border-radius: 10px;
+}
+h1 {
+  max-width: 520px;    
+  margin: 0 auto 15px;  
+  line-height: 1.2;   
 }
 
 form {
   margin: 15px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   border-radius: 10px;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
   text-align: left;
 }
+
+form .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 520px;
+  gap: 10px;
+}
 .hint {
-  margin-left: 10px;
+  width: 100%;
+  max-width: 520px;
+  text-align: left;
+  margin-top: 4px;
+  padding-left: 6px;
+  font-size: 14px;
+
 }
 .search-bar {
-width: 330px;
-padding: 15px;
+flex: 1;
+padding: 12px;
 border: none;
 background-color: #A18D6D;
 border-radius: 10px;
@@ -40,14 +68,13 @@ font-size: 16px;
   color:  #703B3B;
 }
 .submit-button {
-width: 100px;
-margin-left: 10px;
-padding: 15px;
+padding: 12px 18px;
 border: none;
 background-color: #A18D6D;
 border-radius: 10px;
 color:  #703B3B;
 font-size: 16px;
+white-space: nowrap;
 }
 .submit-button:hover{
   background-color: #703B3B;
@@ -56,16 +83,27 @@ font-size: 16px;
 
 .poem-body{
   background-color: rgb(225, 208, 179, 0.8);
-  margin: 15px;
-  padding: 5px;
+  margin: 20px auto;
+  padding: 12px 16px;
   border-radius: 10px;
+   max-width: 520px;
 }
-a{
-  color: #E1D0B3;
+
+hr {
+  width: 550px;
+  margin: 20px auto;          
+  border: 0;
+  height: 1px;
+  background: #703b3b40; 
 }
+
 footer{
   margin: 15px;
   padding: 5px;
+}
+
+a{
+  color: #E1D0B3;
 }
 #poem-section .Typewriter__wrapper {
   white-space: pre-wrap;
@@ -80,4 +118,18 @@ footer{
   border-radius: 15px;
   backdrop-filter: blur(3px);
 }
+
+@media (max-width: 600px) {
+  form .row {
+    max-width: 90%;
+  }
+  .search-bar {
+    width: 70%;
+  }
+  .submit-button {
+    width: auto;
+  }
+}
+
+
 
