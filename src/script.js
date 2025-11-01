@@ -6,8 +6,14 @@ function findingPoem(event) {
   let context =
     "Act like a poet. The poem has to rhyme. Don't make it longer than 15 rows. Take this as an example: From time to time, one needs a rhyme, and if you are bright, you use this website.";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
-  axios.get(apiUrl).then(showPoem);
+
+  let section = document.querySelector("#poem-section");
+  section.innerHTML = `Writing your poem... please wait <i class="fa-solid fa-feather" style="color:#703b3b;">...</i>`;
+  let button = document.querySelector(".submit-button");
+  button.disabled = true;
+  axios.get(apiUrl).then(showPoem)
 }
+
 
 function showPoem(response) {
   let poemText = response.data.answer;
@@ -24,3 +30,5 @@ function showPoem(response) {
 }
 let searchBar = document.querySelector("#search-form");
 searchBar.addEventListener("submit", findingPoem);
+
+
